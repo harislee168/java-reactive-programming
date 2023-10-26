@@ -9,10 +9,10 @@ import java.time.Duration;
 public class OperatorHook {
 
     public static void main(String[] args) {
-//        hookOne();
+        hookOne();
 //        limitRate();
 //        delayElements();
-        onError();
+//        onError();
     }
 
     private static void hookOne() {
