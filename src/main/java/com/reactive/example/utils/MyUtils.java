@@ -27,8 +27,12 @@ public class MyUtils {
     }
 
     public static void sleep(long seconds) {
+        sleepMillis(seconds * 1000);
+    }
+
+    public static void sleepMillis(long millis) {
         try {
-            Thread.sleep(seconds * 1000);
+            Thread.sleep(millis);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
